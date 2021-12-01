@@ -8,18 +8,20 @@
     <meta name="description" content="Ravindu Thilakshana's personal website">
     <meta name="keywords" content="Ravindu Thilakshana,software engineer, naashnix">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <title>Ravindu Thilakshana</title>
 </head>
 
 <body>
-    <header>
-        <!-- Navigation menu  -->
+    <!-- Navigation menu  -->
+    <div class="menu-bar">
         <div class="main-logo">
-            NAASHNIX.COM
+            <a href="index.html" id="main-logo-text">
+                NAASHNIX.COM
+            </a>
         </div>
         <nav>
-            <ul>
+            <ul id="navigations">
                 <li class="menu-list"><a href="#" class="menu-item">HOME</a></li>
                 <li class="menu-list"><a href="#" class="menu-item">ABOUT ME</a></li>
                 <li class="menu-list"><a href="#" class="menu-item">EDUCATION</a></li>
@@ -27,25 +29,24 @@
                 <li class="menu-list"><a href="#" class="menu-item">CONTACT</a></li>
             </ul>
         </nav>
-        <section id="header-content">
-            <div class="background-video">
-                <video src="./assets/video/main_banner_v2.mp4" width="1280px" muted
-                    autoplay loop></video>
-            </div>
+    </div>
+    <header id="header-content">
+        <div class="background-video">
+            <video id="banner-video" src="./assets/video/main_banner_v2.mp4" muted autoplay loop></video>
+        </div>
 
-            <div class="headings">
-                <h1 id="main-heading">FULL STACK DEVELOPER & DESIGNER</h1>
-                <h3 id="sub-heading">WORKING HARD TO MAKE INTERNET AWESOME</h3>
-            </div>
+        <div class="headings">
+            <h1 id="main-heading">FULL STACK DEVELOPER & DESIGNER</h1>
+            <h3 id="sub-heading">WORKING HARD TO MAKE INTERNET AWESOME</h3>
+        </div>
 
-            <div class="profile-image">
-                <div id="outer-circle"></div>
-                <img src="./assets/images/profile_image.jpg" alt="Profile Photo"
-                    style="border-radius: 50%;" width="300vh">
-            </div>
+        <div class="profile-image">
+            <div id="outer-circle"></div>
+            <img src="./assets/images/profile_image.jpg" alt="Profile Photo" style="border-radius: 50%;" width="300vh">
+        </div>
 
-            <button id="header-btn-contact-me" style="margin-bottom: 20px;">Contact Me</button>
-        </section>
+        <button id="header-btn-contact-me" style="margin-bottom: 20px;">Contact
+            Me</button>
     </header>
     <main>
         <!-- Section for main heading. -->
@@ -232,8 +233,7 @@
                     <div class="tag-viewer">#flutter #dart</div>
                 </div>
 
-                <img src="./assets/images/next .png" alt=""
-                    style="transform: rotate(-180deg); width: 60px;">
+                <img src="./assets/images/next .png" alt="" style="transform: rotate(-180deg); width: 60px;">
                 <img src="./assets/images/next .png" alt="" width="60px">
 
                 <div id="project-viewer-on-page-circle"
@@ -261,10 +261,8 @@
         <section id="send-message-component">
             <h2>Get In Touch</h2>
             <form action="#">
-                <input type="email" placeholder="thilakshanaravindu@gmail.com" id="e-mail"
-                    name="e-mail" size="30">
-                <textarea name="message" id="contact-message" cols="30" rows="10"
-                    placeholder="Hey there!"></textarea>
+                <input type="email" placeholder="thilakshanaravindu@gmail.com" id="e-mail" name="e-mail" size="30">
+                <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Hey there!"></textarea>
                 <button>SEND</button>
             </form>
         </section>
@@ -272,29 +270,27 @@
         <address id="social-links" style="display: flex;">
             <div class="social-icons-backgound"><a href="https://github.com/NaashNix"><img
                         src="./assets/images/github.png" alt="" width="50px"></a> </div>
-            <div class="social-icons-background"><a
-                    href="https://www.linkedin.com/in/ravinduts/"><img
+            <div class="social-icons-background"><a href="https://www.linkedin.com/in/ravinduts/"><img
                         src="./assets/images/linkedin.png" alt="" width="50px"></a></div>
-            <div class="social-icons-background"><a
-                    href="https://wa.me/message/VYIMCELYQL42M1"><img
+            <div class="social-icons-background"><a href="https://wa.me/message/VYIMCELYQL42M1"><img
                         src="./assets/images/whatsapp.jpg" alt="" width="50px"></a></div>
-            <div class="social-icons-background"><a
-                    href="https://www.instagram.com/naashnix"><img
+            <div class="social-icons-background"><a href="https://www.instagram.com/naashnix"><img
                         src="./assets/images/instagram.png" alt="" width="50px"></a></div>
             <div class="social-icons-background"><a
                     href="https://stackoverflow.com/users/11685706/ravindu-thilakshana"><img
                         src="./assets/images/stackoverflow.png" alt="" width="50px"></a>
             </div>
-            <div class="social-icons-background"><a
-                    href="https://www.facebook.com/naashnix/"><img
+            <div class="social-icons-background"><a href="https://www.facebook.com/naashnix/"><img
                         src="./assets/images/facebook.svg" alt="" width="50px"></a></div>
         </address>
         <address></address>
         <div id="footer-message-container" style="background: #1C1C1E;">
-           <h6 id="footer-message">Designed and Developed By Ravindu Thilakshana with</h6>
-            <img src="./assets/images/png-clipart-heart-open-free-content-heart .png" id="footer-message-emoji-heart" alt="" width="30px">
+            <h6 id="footer-message">Designed and Developed By Ravindu Thilakshana with
+            </h6>
+            <img src="./assets/images/png-clipart-heart-open-free-content-heart .png" id="footer-message-emoji-heart"
+                alt="" width="30px">
         </div>
-        
+
     </footer>
 </body>
 
