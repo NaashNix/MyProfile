@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+section {
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+body section:nth-child(1) {
+    background-color: red;
+}
+
+body section:nth-child(2) {
+    background-color: green;
+    left: 50vw;
+}
+
+body section:nth-child(3) {
+    background-color: yellow;
+    top: 50vh;
+}
+
+body section:nth-child(4) {
+    background-color: deeppink;
+    top: 50vh;
+    left: 50vw;
+}
+
+section>div:first-child {
+    background-color: white;
+    border-radius: 50%;
+    width: 26vmin;
+    height: 26vmin;
+    position: absolute;
+    top: calc(25vh - 13vmin);
+    left: calc(25vw - 13vmin);
+}
+
+section>div:last-child{
+    background-color: white;
+    width: 24vmin;
+    height: 24vmin;
+    border-radius: 50%;
+    position: absolute;
+}
+
+section:first-child>div:last-child{
+    left: -12vmin;
+    top: -12vmin;
+}
+
+section:nth-child(2)>div:last-child{
+    right: -12vmin;
+    top: -12vmin;
+}
+
+section:nth-child(3)>div:last-child{
+    left: -12vmin;
+    bottom: -12vmin;
+}
+
+section:nth-child(4)>div:last-child{
+    right: -12vmin;
+    bottom: -12vmin;
+}
+
+section>div>div {
+    position: absolute;
+    left: calc(50% - 20%);
+    top: calc(50% - 20%);
+    background-color: red;
+    width: 40%;
+    height: 40%;
+}
+
+#center-container {
+    position: absolute;
+    width: 30vmin;
+    height: 30vmin;
+    background-color: white;
+    z-index: 100;
+    top: calc(50% - 15vmin);
+    left: calc(50% - 15vmin);
+}
+
+#center-circle {
+    position: absolute;
+    background-color: red;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    z-index: 500;
+    top: calc(50% - 30%);
+    left: calc(50% - 30%);
+}
+
+.mid-corners{
+    background-color: white;
+    border-radius: 50%;
+    width: 24vmin;
+    height: 24vmin;
+    position: absolute;
+    left: calc(50vw - 12vmin);
+}
+
+#mid-corners-top{
+    top: -12vmin;
+}
+
+#mid-corners-bottom{
+    bottom: -12vmin;
+}
