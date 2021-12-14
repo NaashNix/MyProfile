@@ -2,40 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ravindu Thilakshana's personal website">
-    <meta name="keywords" content="Ravindu Thilakshana,software engineer, naashnix">
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <title>Home | Ravindu Thilakshana </title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <title>Home | Ravindu Thilakshana</title>
+    </head>
 
 <body>
-    <nav>
-        <h1>NAASHNIX.COM</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
     <header>
-        <div>
-            <video autoplay muted src="./assets/video/main_banner_v2.mp4" loop></video>
+        <section id="header-bar">
+            <h1>NAASHNIX.COM</h1>
+            <nav>
+                <ul>
+                    <li><a href="" class="menu-item active">HOME</a></li>
+                    <li><a href="">ABOUT ME</a></li>
+                    <li><a href="">EDUCATION</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div id="banner-video">
+            <video src="./assets/video/main_banner_v2.mp4" muted autoplay loop></video>
         </div>
         <div id="heading-topics">
             <h1>FULL STACK DEVELOPER & DESIGNER</h1>
-            <h3>WORKING HARD TO MAKE INTERNET AWESOME</h3>
+            <h2>WORKING HARD TO MAKE INTERNET AWESOME</h2>
         </div>
-        <div id="profile-image"><img src="./assets/images/profile_image.jpg" alt="Ravindu Thilakshana's Profile Image">
-        </div>
-        <button>My Story</button>
+        <section id="profile-image">
+            <div>
+                <img src="./assets/images/profile_image.jpg" alt="Ravindu Thilakshana">
+            </div>
+        </section>
+
+        <a href="./mystory.html" id="my-story-button">My Story</a>
     </header>
-        <div id="about-me"></div>   
     <main>
         <!-- Section for main heading. -->
         <section id="about-me-section" style="background: #1C1C1E;">
@@ -283,4 +294,3 @@
 </body>
 
 </html>
-

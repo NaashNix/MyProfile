@@ -1,122 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap');
-
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
 
-
-nav {
-    /* -webkit-backdrop-filter: lur(10px); */
+header section:first-child{
     backdrop-filter: blur(10px);
-    background-color: rgba(65, 65, 65, 0.5);
-    width: 100%;
-    height: 2rem;
-    overflow: hidden;
+    height: 30px;
     position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     z-index: 999;
+    border-bottom: 0.5px solid #414141;
 }
-
-nav h1 {
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header section h1{
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 1em;
-    padding: .3em;
-    color: white;
-    float: left;
-    position: relative;
-    margin-left: 5px;
+    font-size: 20px;
+    margin: 5px 10px;
 }
 
-ul {
-    float: right;
-    margin-right: 20px;
-    margin-top: 5px;
-    width: 500px;
+header ul{
     display: flex;
-    position: relative;
-    justify-content: space-between;
+    height: 100%;
+    width: 493px;
+    cursor: pointer;
 }
 
-ul li {
-    display: inline-block;
-    text-decoration: none;
-}
-
-nav ul li a {
-    text-decoration: none;
+header ul li{
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
     color: white;
 }
 
-header:nth-child(2) video {
-    width: 100%;
-    /* height: 100vh; */
-    /* overflow: hidden; */
+header ul li:hover, header ul li:focus{
+    background-color: white;
+    color: #414141;
+}   
+
+header ul li:active{
+    background-color: #4d4d4d;
 }
 
-header:nth-child(2) {
-    height: 520.88px;
+header ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
 }
 
-#heading-topics {
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+@media (max-width:768px){
+    header ul{
+        display: none;
+    }
+}
+
+#banner-video video{
     position: absolute;
-    top: 15%;
+    width: 100%;
+    z-index: -1;
 }
 
-#heading-topics h3 {
-    color: white;
-    font-weight: 300;
-    font-size: 2.1em;
+#banner-video{
+    width: 100% !important;
+    overflow: hidden;
+}
+
+#heading-topics{
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 20%;
 }
 
 #heading-topics h1 {
-    font-size: 3.5em;
+    font-size: 10vh;
     font-weight: 900;
     color: white;
+    letter-spacing: 1.8vh;
 }
 
-#profile-image {
-    width: 40vh;
-    height: 38.5vh;
-    border-radius: 50%;
-    position: absolute;
-    top: 40vh;
-    left: 40vw;
+#heading-topics h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 6vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#profile-image{
+    width: 100%;
+    height: 50vmin;
     display: flex;
-    /* overflow: auto; */
+    justify-content: center;
+    position: absolute;
+    top: 252px;
+}
+
+#profile-image div{
+    position: absolute;
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg,#FD2155, #7510F7, #FF009F, #F7DF1E);
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#7510F7, #FF009F);
+    background-size: 200% 200%;
+
+    -webkit-animation: Animation 2s ease infinite;
+    -moz-animation: Animation 2s ease infinite;
+    animation: Animation 2s ease infinite;
+
 }
 
-#profile-image img {
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+#profile-image img{
+    border-radius: 100%;
+    margin: 5px;
+    height: 96%;
     width: 96%;
-    border-radius: 50%;
-    position: absolute;
 }
 
-header button{
-    width: 10rem;
+#my-story-button{
     position: absolute;
-    height: 3rem;
-    top: 85vh;
-    left: 85vw;
-    background: none;
-    border: 2px solid #FE0299;
+    bottom: 25px;
+    right: 50px;
+    width: 150px;
+    height: 40px;
+    border: 3px solid #FE0299;
+    border-radius: 20px;
+    text-decoration: none;
     color: white;
-    border-radius: 0.8em;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 600;
-    font-size: 1.3em;
+    text-align: center;
+    padding: 9px;
+    font-family: 'Poppins',sans-serif;
 }
 
-#about-me{
-    background: #1C1C1E;
-    width: 100%;
-    height: 100vh;
+#my-story-button:hover, #my-story-button:focus{
+    background-color: #FE0299;
+    transition: ease-in-out 500ms;
 }
