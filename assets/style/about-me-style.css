@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+#about-me-section{
+    background-color: #1C1C1E;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me-section img:first-child{
+    width: 26.4%;
+}
+
+#about-me-bar{
+    height: 100%;
+    width: 7vw;
+    background: linear-gradient(#FD2155,#FF009F);
+    /* position: absolute; */
+}
+
+#about-me-section h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    color: white;
+    width: 4rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0 5px 0.5em 5px;
+}
+
+#description{
+    display: flex;
+    flex-direction: column;
+}
