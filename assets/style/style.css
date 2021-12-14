@@ -160,9 +160,9 @@ header ul li a{
     text-align: center;
     padding: 9px;
     font-family: 'Poppins',sans-serif;
+    transition: ease-in-out 300ms;
 }
 
 #my-story-button:hover, #my-story-button:focus{
     background-color: #FE0299;
-    transition: ease-in-out 500ms;
 }

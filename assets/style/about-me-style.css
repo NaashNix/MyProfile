@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 #about-me-section{
     background-color: #1C1C1E;
@@ -51,7 +52,34 @@
 }
 
 #description article{
-    margin: 0 30px;
-    border: 1px solid red;
+    margin: 20px 40px;
     text-align: center;
+    margin-bottom: 55px;
+}
+
+#description article p{
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+#description article p .bold{
+    font-weight: 700;
+}
+
+#view-my-story{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    color: white;
+    border: 2px solid #EB7C00;
+    text-decoration: none;
+    border-radius: 14px;
+    padding: 12px 24px;
+    transition: background-color ease-in-out 300ms;
+}
+
+#view-my-story:hover, #view-my-story:focus{
+    background-color: #EB7C00;
 }
