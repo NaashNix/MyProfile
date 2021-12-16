@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #414141;
+}
+#header-bar{
+    backdrop-filter: blur(10px);
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    border-bottom: 0.5px solid #414141;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+header #header-bar h1{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+header ul{
+    display: flex;
+    height: 100%;
+    width: 493px;
+    cursor: pointer;
+}
+
+header ul li{
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header ul li:hover, header ul li:focus{
+    background-color: white;
+    color: #414141;
+}   
+
+header ul li:active{
+    background-color: #4d4d4d;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+@media (max-width:768px){
+    header ul{
+        display: none;
+    }
+}
+
+#header-banner{
+    background-color: #16A085;
+    width: 100%;
+    height: 100vh;
+    border-top: 30px solid #414141;
+}
+
+#header-banner img:nth-of-type(1){
+    width: 880px;
+    height: 1335px;
+    position: absolute;
+    left: -223px;
+    top: 15px;
+
+}
+
+#header-banner img:nth-of-type(2){
+    width: 880px;
+    position: absolute;
+    left: -240px;
+
+}
+
+#header-banner h1{
+    position: absolute;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 62px;
+    top: 198px;
+    left: 435px;
+    z-index: 10;
+    text-align: center;
+}
+
+#header-banner span{
+    display: block;
+}
+
+#header-banner h5{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 53%;
+    left: 42%;
+}
+
+#scrolling-polygon{
+    clip-path: polygon(0 42%, 48% 100%, 98% 42%, 95% 42%, 47% 97%, 48% 97%, 49% 97%,3% 42%);
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left: 815px;
+    top: 450px;
+}
+
+#header-banner h6{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    position: relative;
+    top: 76%;
+    left: 59%;
+
+}
+
