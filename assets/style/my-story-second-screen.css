@@ -1,5 +1,23 @@
+#ayubowan{
+    background-color: #1C1C1E;
+    width: 639;
+    height: 111.3vh;
+}
+
 #ayubowan div:nth-last-of-type(1){
     height: 37px;
-    width: 718px;
-    background-color: red;
+    background: linear-gradient(to left,#FD2155, #FF009F);
+    position: relative;
+    width: 20%;
+    float: right;
+
 }
+
+#ayubowan h1{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 20px;
+}
+

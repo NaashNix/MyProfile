@@ -109,7 +109,7 @@ header ul li a{
     font-weight: 100;
     color: white;
     font-size: 30px;
-    position: relative;
+    position: absolute;
     top: 53%;
     left: 42%;
 }
@@ -120,8 +120,8 @@ header ul li a{
     height: 80px;
     width: 80px;
     position: relative;
-    left: 815px;
-    top: 450px;
+    left: 801px;
+    top: 503px;
 }
 
 #header-banner h6{
@@ -129,9 +129,8 @@ header ul li a{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 15px;
-    position: relative;
-    top: 76%;
-    left: 59%;
-
+    position: absolute;
+    top: 83%;
+    left: 58.3%;
 }
 
