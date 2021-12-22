@@ -10,15 +10,11 @@
     flex-direction: row;
 }
 
-#about-me-section img:first-child{
-    width: 26.4%;
-}
 
 #about-me-bar{
     height: 100%;
-    width: 7vw;
+    min-width: 2.7vw;
     background: linear-gradient(#FD2155,#FF009F);
-    /* position: absolute; */
 }
 
 #about-me-section h1{
@@ -32,10 +28,11 @@
     margin: 0 5px 0.5em 5px;
 }
 
-#description{
+#description {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 56vw;
 }
 
 #description h2:first-child{
@@ -61,7 +58,7 @@
     color: white;
     font-family: 'Roboto' , sans-serif;
     font-weight: 300;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.5;
 }
 
@@ -82,4 +79,8 @@
 
 #view-my-story:hover, #view-my-story:focus{
     background-color: #EB7C00;
+}
+
+#education-skill-bar{
+    
 }
