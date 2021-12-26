@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+section{
+    width: 220px;
+    height: 400px;
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 145px;
+}
+
+section>div{
+    left: 0%;
+    height: 40px;
+    /* border: 1px solid red; */
+    position: relative;
+    background-color: #b5179e;
+    box-shadow: 1px 2px 3px 2px #3a483b;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+section div h3{
+    margin: 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+section div i{
+    position: absolute;
+    font-size: 28px;
+    top: 6px;
+    right: 10px;
+    
+}
+
+section>div:hover{
+    left: 145px;
+}
