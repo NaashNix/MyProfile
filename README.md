@@ -12,6 +12,9 @@ It is better to have a personal website to a software developer. So I developed 
 ### Link To Prototype
 <a href="https://www.figma.com/file/rIXCh4IvsMUvRSOMrkpCgZ/NAASHNIX"> ![figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) </a>
 
+### Link To Wireframe
+<a href="https://wireframe.cc/8Kgx0A"> Click Here </a>
+
 ### Contact Me
 ![image](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white) </a> <a href="https://t.me/naashnix"> ![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) </a> <a href="mailto: naashnix@protonmail.com"> ![image](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white) </a> <a href="https://www.facebook.com/naashnix/"> ![image](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white) </a>
 
