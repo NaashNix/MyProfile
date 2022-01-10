@@ -81,18 +81,33 @@
     background-color: #EB7C00;
 }
 
+#education-and-skills{
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 #education-skills-bar{
     background: linear-gradient(to right ,#7510F7, #FF073A);
-    height: 10px;
-    width: 200px;
+    height: 1.6vw;
+    width: 20vw;
+    margin-left: 3vw;
+    margin-top: 4vw;
 }
 
 #education-and-skills h1:nth-child(2){
     color: white;   
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Roboto',sans-serif;
     font-weight: 800;
-
+    margin: 0%;
+    margin-left: 2vw;
+    margin-top: 4vw;
 }
 
 #education-skills-quote{
@@ -101,8 +116,9 @@
     padding: 15px;
     border: 2px solid #FE019C;
     border-radius: 15px;
-    width: 600px;
+    width: 35em;
     text-align: center;
+    margin: 2.3% auto 2%;
 }
 
 #education-skills-quote h3{
@@ -112,4 +128,28 @@
 
 #education-skills-quote h5{
     font-weight: 100;
+}
+
+#time-line-shape{
+    width: 56vw;
+    height: 0.32vw;
+    background: linear-gradient(to left ,#00D9BA , #7510F7);
+}
+
+.circle{
+    background-color: #00D9BA;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 100%;
+    border: 2px solid white; 
+}
+
+.line{
+    height: 5em;
+    width: 0.12em;
+    background-color: white;
+}
+
+.container-box{
+
 }
