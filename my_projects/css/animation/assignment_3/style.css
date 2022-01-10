@@ -1,0 +1,53 @@
+img{
+    width: 500px;
+}
+
+section{
+    width: 500px;
+    height: 300px;
+    border: 5px solid black;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+div{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    left: 0px;
+    animation-name: slider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slider {
+    0%,10%{
+        left: 0;
+    }
+
+    18%,28%{
+        left: -500px;
+    }
+
+    36%,46%{
+        left: -1000px;
+    }
+
+    54%,64%{
+        left: -1500px;
+    }
+
+    72%,82%{
+        left: -2000px;
+    }
+
+    90%,100%{
+        left: -2500px;
+    }
+}
