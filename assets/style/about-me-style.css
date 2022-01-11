@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap');
 #about-me-section {
     background-color: #1C1C1E;
     width: 100%;
@@ -364,7 +365,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 175em;
+    top: 174.6em;
     border-radius: 20px;
     box-shadow: 4px 4px 9px -2px black;
     justify-content: space-between;
@@ -374,5 +375,33 @@
 #start-a-project h1{
     font-family: 'Source Code Pro',sans-serif;
     font-weight: 800;
+    margin-left: 35px;
+    font-size: 1.3em;
 }
 
+#start-a-project p{
+    word-wrap: normal;
+    width: 478px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 24px;
+    padding: 0 40px;
+}
+
+#start-a-project a{
+    text-decoration: none;
+}
+
+#start-a-project h3{
+    color: #4F4F4F;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    background-color: white;
+    width: 148px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 41px;
+    box-shadow: 0px 2px 5px 0px black;
+}
