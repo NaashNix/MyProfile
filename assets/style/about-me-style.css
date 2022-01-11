@@ -286,7 +286,7 @@
 .viewer-tile{
     width:12em;
     height: 12em;
-    border-radius: 20%;
+    border-radius: 13%;
     overflow: hidden;
 }
 
@@ -296,5 +296,21 @@
 
 .newtab-icon{
     width: 30px;
-    
+    z-index: 2;
+    position: relative;
+    bottom: 97%;
+    right: -82%;
+}
+
+.viewer-tile h4{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    position: relative;
+    padding: 10px;
+    background-color: #002034;
+    bottom: 18%;
+    width: 148px;
+    float: right;
+    border-radius: 18px 0 0 0;
 }
