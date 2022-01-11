@@ -154,7 +154,7 @@
 .container-box {}
 
 
-/* End of the education and skills tab */
+
 
 #my-tool-box-bar {
     width: 1.5em;
@@ -206,7 +206,10 @@
     left: 2%;
 }
 
-/* End of the my tool box */
+#tools h3{
+    display: inline-block;
+}
+
 
 #projects {
     height: 100vh;
@@ -404,4 +407,8 @@
     border-radius: 10px;
     margin-right: 41px;
     box-shadow: 0px 2px 5px 0px black;
+} 
+
+#footer{
+    
 }
