@@ -175,7 +175,7 @@
 
 }
 
-#tools article{
+#tools article {
     margin-left: 3.5%;
     margin-top: 2.1%;
 }
@@ -207,35 +207,94 @@
 
 /* End of the my tool box */
 
-#projects{
+#projects {
     height: 100vh;
-    
+
 }
 
-#projects-quote{
+#projects-quote {
     color: white;
     font-family: 'Roboto', sans-serif;
-    padding: 15px;
+    padding: 15px 18px;
     border: 2px solid #F7DF1E;
     border-radius: 15px;
-    width: 28em;
+    width: 31em;
     text-align: center;
     position: absolute;
-    margin: 2.3% 2% 2%;
+    margin: 4.3% 2% 2%;
     font-weight: 600;
     font-size: 1.2em;
 }
 
-#projects-quote h5{
+#projects-quote h5 {
     font-weight: 300;
     font-size: 0.85em;
     text-align: left;
     margin-left: 2%;
 }
 
-#projects-bar{
-    width: 20%;
-    height: 4%;
+
+#project-description{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: flex-end;
+    margin: 5% 2%;
+}
+#projects-bar {
+    width: 15.5em;
+    height: 1.3em;
     background: linear-gradient(to right, #F7DF1E, #EB7C00);
 }
 
+#projects-main-heading {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+#projects-subheading {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+#project-types{
+    display: flex;
+    justify-content: space-between;
+    width: 19em;
+    position: absolute;
+    margin: 15% auto;
+    left: 0;
+    right: 0;
+    color: #3D3D3D;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+}
+
+#project-types .selected{
+    color: white;
+}
+
+#project-view-point{
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewer-tile{
+    width:12em;
+    height: 12em;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.project-bg-image{
+    width: 12em;
+}
+
+.newtab-icon{
+    width: 30px;
+    
+}
