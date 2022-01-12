@@ -204,7 +204,7 @@
     font-weight: 400;
     text-decoration: none;
     position: relative;
-    top: 52%;
+    top: 9%;
     left: 2%;
 }
 
@@ -498,6 +498,27 @@ footer {
     padding: 5px;
     margin: auto;
 
+}
+
+#skill-showcase-controller-section{
+    display: flex;
+    justify-content: space-between;
+    width: 113px;
+    position: relative;
+    top: 25px;
+    left: 862px;
+}
+
+.skill-showcase-controller{
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+
+}
+
+.selected{
+    background-color: #FE019C;
 }
 
 #social-icons {
