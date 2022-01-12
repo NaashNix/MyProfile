@@ -452,14 +452,14 @@ footer {
 
 }
 
-#social-links{
+#social-links {
     display: flex;
     flex-direction: column;
     width: 458px;
     height: 260px;
 }
 
-#social-links h2{
+#social-links h2 {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
@@ -467,17 +467,49 @@ footer {
     margin-top: 0%;
 }
 
-#social-icons{
+#tool-case {}
+
+.skill-showcase {
+    height: 270px;
+    width: 208px;
+    border-radius: 10px;
+    overflow: hidden;
+    left: 810px;
+    position: relative;
+}
+
+.skill-showcase img {
+    height: 270px;
+    width: 209px;
+}
+
+.skill-showcase h4{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    z-index: 2;
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    background-color: rgba(27, 27, 27, 0.4);
+    backdrop-filter: blur(10px);
+    height: 40px;
+    padding: 5px;
+    margin: auto;
+
+}
+
+#social-icons {
     display: flex;
     flex-wrap: wrap;
     width: 100px;
-    /* justify-content: space-around; */
     width: 456px;
     height: 224px;
 }
 
 
-.social-icons-background{
+.social-icons-background {
     margin: 22px 33px;
     background-color: white;
     width: 86px;
@@ -487,39 +519,39 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.social-icons-background img{
+.social-icons-background img {
     width: 46px;
 }
 
-.social-icons-background:nth-of-type(1){
-border-color: #FB073E;
+.social-icons-background:nth-of-type(1) {
+    border-color: #FB073E;
 }
 
-.social-icons-background:nth-of-type(2){
+.social-icons-background:nth-of-type(2) {
     border-color: #0B66C3;
 }
 
-.social-icons-background:nth-of-type(3){
+.social-icons-background:nth-of-type(3) {
     border-color: #01BA34;
 }
 
-.social-icons-background:nth-of-type(4){
+.social-icons-background:nth-of-type(4) {
     border-color: #D62F84;
 }
 
-.social-icons-background:nth-of-type(5){
+.social-icons-background:nth-of-type(5) {
     border-color: #E37015;
 }
 
-.social-icons-background:nth-of-type(6){
+.social-icons-background:nth-of-type(6) {
     border-color: #115DFF;
 }
 
 
-#footer-message-container{
+#footer-message-container {
     text-align: center;
     display: flex;
     height: 20px;
@@ -530,15 +562,14 @@ border-color: #FB073E;
     /* padding: 5px; */
 }
 
-#footer-message-container h6{
+#footer-message-container h6 {
     color: white;
-    font-family: 'Kite One',sans-serif;
+    font-family: 'Kite One', sans-serif;
     font-size: 13px;
 
 }
 
-#footer-message-container img{
+#footer-message-container img {
     width: 30px;
     height: 25px;
 }
-
