@@ -281,7 +281,7 @@
     font-weight: 400;
 }
 
-#project-types .selected {
+#project-types .selectedType {
     color: white;
 }
 
@@ -367,11 +367,11 @@
     height: 5em;
     background-color: #216B9B;
     color: white;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
-    margin: auto;
-    top: 174.6em;
+    margin: -45px auto;
+    /* top: 174.6em; */
     border-radius: 20px;
     box-shadow: 4px 4px 9px -2px black;
     justify-content: space-between;
