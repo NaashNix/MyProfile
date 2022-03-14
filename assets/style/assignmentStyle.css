@@ -39,6 +39,10 @@ h3{
     background-color: #c0392b;
 }
 
+#javascript h3{
+    background-color: #e84393;
+}
+
 section:nth-of-type(1){
     border: 5px #16a085 solid ;
 }
@@ -51,3 +55,6 @@ section:nth-of-type(3){
     border: 5px #c0392b solid ;
 }
 
+section:nth-of-type(4){
+    border: 5px #e84393 solid ;
+}
