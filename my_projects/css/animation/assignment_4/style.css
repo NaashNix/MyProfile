@@ -34,7 +34,6 @@ section{
     display: flex;
     flex-direction: row;
     top: 88px;
-
     animation-name: roadAnimation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -55,7 +54,8 @@ section{
     animation-name: carWheelers;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: normal
+    ;
 }
 
 #front{
