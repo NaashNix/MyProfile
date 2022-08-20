@@ -171,3 +171,68 @@ a:hover {
    transform: scale(1.1);
     background: rgba(196, 196, 196, 0.6);
 }
+
+#aboutMeSectionParent{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  /* overflow: hidden; */
+  position: relative;
+  background: #0e100f;
+  z-index: -3;
+  justify-self: center;
+  align-items: center;
+}
+
+#aboutMeMyImage{
+  width: 22vw;
+}
+
+#aboutMeTextDetailsParent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutMeSectionBackgroundImage{
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  /* scale: ; */
+}
+
+#aboutMeSectionParent div{
+  z-index: 2;
+}
+
+#aboutMeQuoteParent{
+  margin-top: 7%;
+}
+
+#aboutMeQuoteParent span{
+  color: white;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.2rem;
+  border-radius: 16px;
+  border: #7510F7 solid 3px;
+  padding: 1.3rem;
+  font-weight: 700;
+}
+
+#aboutMeDescriptionParent{
+  margin: 5% 20%;
+  text-align: center;
+}
+
+.brSmall{
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#aboutMeDescriptionParent p{
+  color: white;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+}
