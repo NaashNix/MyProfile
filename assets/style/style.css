@@ -64,6 +64,11 @@ nav button:focus{
     transform: scale(1.05);
 }
 
+
+#menuItem li a:hover, #menuItem li a:focus{
+  color: white;
+}
+
 #menuItem li a:before{
 
   content: "";
