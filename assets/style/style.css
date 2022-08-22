@@ -7,23 +7,28 @@
 
 body {
   font-size: 10px;
+  background-color: #1B1C21 !important;
 }
 nav {
   z-index: 100;
   position: fixed;
-  background-color: rgba(65, 65, 65, 0.6);
-  height: 40px;
+  height: 60px;
   width: 100%;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 label.logo {
   color: white;
   font-size: 1.5rem;
-
+  font-family: 'Goldman',sans-serif;
   padding: 0.1rem 1rem;
   font-weight: bold;
+  margin-bottom: 0;
 }
 nav ul {
-  float: right;
+  margin-bottom: 0;
   margin-right: 20px;
 }
 nav ul li {
@@ -38,17 +43,55 @@ nav ul li a {
   font-size: 15px;
   padding: 5px 11px;
   border-radius: 3px;
+  position: relative;
+  display: inline;
 }
 
-a.active,
-a:hover {
-  background: rgba(255, 255, 255, 0.4);
-  transition: 0.5s;
-  text-decoration: none;
-  color: white !important;
-  font-size: 17px;
-  transition: background 0.5s;
+nav button{
+  border-radius: 15px;
+  font-family: 'Source Code Pro';
+  line-height: 1;
+  background: white;
+  padding: 0.6rem 0.5rem 0.6rem 0.5rem;
+  font-weight: 700;
+  border: none;
+  transition: all 300ms ease-in-out;
+  margin: 0.6rem;
 }
+
+nav button:hover,
+nav button:focus{
+    transform: scale(1.05);
+}
+
+#menuItem li a:before{
+
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  bottom: -3px;
+  left: 0;
+  background-color: #47C0A0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+
+}
+
+#menuItem li a:hover:before , #menuItem li a.active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#menuItem li a.active{
+  color: #47C0A0 !important;
+}
+
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -106,140 +149,5 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
-}
-
-#background {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
-#background img {
-  position: relative;
-  top: 0;
-  z-index: -1;
-}
-
-#mainHeadingParent {
-  position: absolute;
-  top: 22%;
-}
-
-#mainHeadingParent span {
-  text-align: center;
-  color: white;
-  display: block;
-}
-
-#nameSpan {
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  font-size: 5vw;
-  text-shadow: 3px 3px 5px rgb(0 0 0 / 64%);
-  line-height: 1;
-}
-
-#sloganSpan {
-  font-weight: 300;
-  font-size: 2vw;
-}
-
-#background button {
-  position: absolute;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  padding: 0.5rem;
-  font-family: "Inter", sans-serif;
-  font-size: 1.1vmax;
-  font-weight: 500;
-  line-height: 1;
-  z-index: 1;
-  bottom: 10%;
-  background: rgba(196, 196, 196, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-#background button:hover,
-#background button:focus {
-  transform: scale(1.1);
-  background: rgba(196, 196, 196, 0.6);
-}
-
-#aboutMeSectionParent {
-  background: #1c1c1e;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 10rem 3rem 10rem;
-}
-
-#quoteOne {
-  background: transparent;
-  border-radius: 15px;
-  border: 2px solid #7510f7;
-  width: fit-content;
-  padding: 0.6rem 0.9rem;
-  color: white;
-  font-size: 1.01rem;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  margin-top: 3rem;
-}
-
-#descriptionAboutMe {
-  margin: 2rem 2.5rem 2rem 2.5rem;
-  color: white;
-  text-align: center;
-  font-family: 'Inter',sans-serif;
-  font-weight: 300;
-  font-size: 1.06rem;
-}
-
-.lineBreakDown {
-  display: block;
-  margin-bottom:1rem;
-}
-
-#linkToViewMore a{
-  color: white;
-  font-family: 'Roboto',sans-serif;
-  font-size: 1.002rem;
-  border-radius: 8px;
-  text-decoration: none;
-  border: 1px solid #EB7C00;
-  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-  font-weight: 500;
-}
-
-#linkToViewMore a:hover,
-#linkToViewMore a:hover{
-  background: #EB7C00;
-  transition: background 0.6s;
-}
-
-#educationSection{
-  background: #353535;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 10rem;
-}
-
-#quoteTwo{
-  background: transparent;
-  border-radius: 15px;
-  border: 2px solid #7510f7;
-  width: fit-content;
-  padding: 0.6rem 0.9rem;
-  color: white;
-  font-size: 1.01rem;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  margin-top: 3rem;
 }
 
