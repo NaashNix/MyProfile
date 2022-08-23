@@ -43,6 +43,7 @@
   top: 0rem;
   left: -3rem;
   animation: move 6s infinite alternate-reverse ease-out;
+  transition: all 900ms;
 }
 
 #miniDetailsTwo {
@@ -63,8 +64,8 @@
   top: 8rem;
   left: 16rem;
   animation: moveTwo 5s infinite alternate-reverse ease-out;
+  transition: all 900ms;
 }
-
 
 #miniDetailsThree {
   z-index: 2;
@@ -84,13 +85,16 @@
   top: 16rem;
   left: -4rem;
   animation: moveThree 5s infinite alternate-reverse ease-out;
+  transition: all 900ms;
 }
 
-
-#miniDetailsOne:hover, #miniDetailsOne:focus,
-#miniDetailsTwo:hover, #miniDetailsTwo:focus,
-#miniDetailsThree:hover, #miniDetailsThree:focus{
-  transform: rotateY(360deg);
+#miniDetailsOne:hover,
+#miniDetailsOne:focus,
+#miniDetailsTwo:hover,
+#miniDetailsTwo:focus,
+#miniDetailsThree:hover,
+#miniDetailsThree:focus {
+  transform: rotateZ(360deg);
   transition: all 900ms;
 }
 
