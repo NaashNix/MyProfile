@@ -1,5 +1,6 @@
 const cardContainer = $("#cardContainer");
 
+
 function skillViewComponent(skill) {
   console.log("Skill called");
 
@@ -72,3 +73,7 @@ const skills = [
 skills.forEach((skill) => {
   cardContainer.append(skillViewComponent(skill));
 });
+
+
+
+

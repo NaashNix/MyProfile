@@ -59,9 +59,11 @@
 
 .cardParent p{
     padding: 0.3rem;
-    margin-top:     1rem;
+    margin-top: 1rem;
     color: white;
     text-align: center;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
 }
 
 .ratingParent{
@@ -80,4 +82,100 @@
 
 .rated{
     background-color: #D0AF00 !important;
+}
+
+#projectsSectionMainParent{
+    background-color: #25252F;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projectsSectionMainParent #mainHeading{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#categoryParent a{
+    color: #3D3D3D;
+    margin: 2rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#categoryParent a:hover,
+#categoryParent a:focus,
+#categoryParent a.active{
+    color: white;
+    transition: all 400ms;
+}
+
+
+
+#projectItemsContainer{
+    margin: auto 6rem;
+    width: 85%;
+    background-color: #232732;
+    display: flex;
+    flex-direction: row;
+    /* overflow-x: scroll; */
+}
+
+.projectItem{
+    width: 200px;
+    height: 200px;
+    margin-right: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.iconsParent{
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.iconsParent img{
+    width: 150%;
+}
+
+.description{
+    background-color: rgba(61, 61, 61, 0.8);
+    z-index: 2;
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+}
+
+.description:hover{
+    opacity: 1;
+    transition: all 300ms;
+}
+
+.description p{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px #000;
+
+}
+
+.description img{
+    width: 80px;
+}
+
+.description img:hover,
+.description img:focus{
+    transform: rotateZ(360deg);
+    transition: all 500ms;
+    cursor: pointer;    
 }
