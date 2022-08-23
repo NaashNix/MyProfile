@@ -5,7 +5,7 @@
   /* height: 200px; */
   box-shadow: 4px 4px 9px 1px rgb(0 0 0 / 30%);
   border: #9747ff solid 2px;
-  position: relative;
+  position: relative; 
 }
 
 .headerHeadingContainer span {
