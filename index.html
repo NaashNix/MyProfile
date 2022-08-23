@@ -24,6 +24,7 @@
             href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./assets/style/headingSection.css">
+        <link rel="stylesheet" href="./assets/style/aboutMeSection.css">
     </head>
 
 <body>
@@ -50,12 +51,13 @@
         </nav>
 
 
-        <main>
+        <main id="particles-js">
+
             <section id="headingSectionMainParent">
-                <div class="headerHeadingContainer" >
+                <div class="headerHeadingContainer">
                     <span id="headingOne">HELLO I'M</span><br>
                     <span id="headingTwo">A WEB</span>
-                    <span id="headingThree">DESIGNER</span> <br>        
+                    <span id="headingThree">DESIGNER</span> <br>
                     <span id="headingFour">AND</span>
                     <span id="headingFive">DEVELOPER</span>
                 </div>
@@ -71,11 +73,78 @@
                     <img src="./assets/images/myImageRounded.png" alt="">
                 </div>
             </section>
+
+            <section class="aboutMeSectionMainParent" >
+                <div id="miniDetailsOne">
+                    <span class="miniDetailsHeadingOne">5+</span>
+                    <span class="miniDetailsHeadingTwo">PROJECTS</span>
+                </div>
+
+                <div id="miniDetailsTwo">
+                    <span class="miniDetailsHeadingOne">2+</span>
+                    <span class="miniDetailsHeadingTwo">EXPERIENCE</span>
+                </div>
+
+                <div id="myImageBlackAndWhite">
+
+                    <img src="./assets/images/blackNWhiteMyImage.png" alt="">
+                </div>
+
+                <div id="aboutMeDescription">
+                    <p>
+                        I’m Full Stack developer and still undergraduate. 20 years old independent boy with lot of
+                        future plans.
+
+                        I’m looking for challenging problems to solve. My background is in enterprise software
+                        development, however, I have an
+                        insatiable curiosity for AI – particularly deep learning – applications and their potential to
+                        change the technology
+                        landscape.
+
+                    </p>
+
+                    <button id="viewMoreButton">VIEW MORE</button>
+                    <button id="downloadCvButton">DOWNLOAD CV</button>
+
+                </div>
+
+            </section>
+
         </main>
 
+        <!-- count particles
+        <div class="count-particles">
+            <span class="js-count-particles">--</span> particles
+        </div> -->
 
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <!-- scripts -->
+        <script src="assets/js/particles.js"></script>
+        <script src="assets/js/app.js"></script>
 
+        <!-- stats.js -->
+        <script src="./assets/js/stats.js"></script>
 
+        <script>
+            var count_particles, stats, update;
+            stats = new Stats;
+            stats.setMode(0);
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+            document.body.appendChild(stats.domElement);
+            count_particles = document.querySelector('.js-count-particles');
+            update = function () {
+                stats.begin();
+                stats.end();
+                if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+                }
+                requestAnimationFrame(update);
+            };
+            requestAnimationFrame(update);
+        </script>
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -88,6 +157,8 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
         <script src="./assets/js/script.js"></script>
+
+
     </body>
 
     </html>
