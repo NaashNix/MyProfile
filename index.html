@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="./assets/style/headingSection.css">
         <link rel="stylesheet" href="./assets/style/aboutMeSection.css">
         <link rel="stylesheet" href="./assets/style/educationSection.css">
+        <link rel="stylesheet" href="./assets/style/skillsAndFrameworks.css">
     </head>
 
 <body>
@@ -75,7 +76,7 @@
                 </div>
             </section>
 
-            <section class="aboutMeSectionMainParent" >
+            <section class="aboutMeSectionMainParent">
                 <div id="miniDetailsOne">
                     <span class="miniDetailsHeadingOne">5+</span>
                     <span class="miniDetailsHeadingTwo">PROJECTS</span>
@@ -120,10 +121,12 @@
 
         <section id="educationSectionMainParent">
             <span id="educationMainHeading">EDUCATION & SKILLS</span>
+
             <img src="./assets/images/educationTree.png" alt="">
+
         </section>
 
-        <section id="whatCanIdoSectionMainParent" >
+        <section id="whatCanIdoSectionMainParent">
             <div>
                 <span>WHAT CAN I DO?</span>
                 <p>
@@ -133,13 +136,40 @@
                     UI/UX <br>
                     Photoshop <br>
                     Illustrator <br>
-                    Many More :) 
+                    Many More :)
                 </p>
             </div>
-            <img src="./assets/images/Descktop.png" alt="">
+            <div id="desktopImageContainer">
+                <img src="./assets/images/Descktop.png" alt="">
+            </div>
         </section>
 
-       
+        <section id="skillsSectionMainParent">
+            <span id="mainHeading">SKILLS & FRAMEWORKS</span>
+            <div id="cardContainer">
+                <div class="cardParent">
+                   <div style="display: flex; flex-direction: row;  align-items: center;">
+                    <img class="cardImage" src="./assets/images/HTML5 .png" alt="">
+                    <div>
+                        <span class="cardMainTitle">HTML5</span>
+                        <span class="cardProjectTitle">6+ PROJECTS</span>
+                        <div class="ratingParent">
+                            <div class="ratingCircles"></div>
+                            <div class="ratingCircles"></div>
+                            <div class="ratingCircles"></div>
+                            <div class="ratingCircles"></div>
+                            <div class="ratingCircles"></div>
+                        </div>
+                    </div>
+                   </div>
+                    <p>I’ve done more than 5 projects using HTML language. 
+                        This experience in HTML leads me to the easy
+                        tool for programming
+                        and web developing.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- particles.js container -->
         <div id="particles-js"></div>
         <!-- scripts -->
@@ -169,7 +199,7 @@
             requestAnimationFrame(update);
         </script>
 
-
+        <script src="./assets/js/skillSection.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>

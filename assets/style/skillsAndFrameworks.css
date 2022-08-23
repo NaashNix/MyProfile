@@ -1,0 +1,61 @@
+#skillsSectionMainParent{
+    margin: 4% 10%;
+    background-color: #6DD588;
+    border-radius: 20px;
+    padding-bottom: 1.5rem;
+}
+
+#skillsSectionMainParent #mainHeading{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin: 0.8rem 1rem 1rem 1rem;
+    display: inline-block;
+    line-height: 1;
+    text-shadow: #000 1px 1px 10px;
+}
+
+#cardContainer{
+    margin: 1rem 2rem;
+    background-color: #000;
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem;
+}
+
+.cardParent{
+    background-color: #232732;
+    border-radius: 15px;
+    width: 250px;
+    padding: 1rem 1rem;
+}
+
+.cardImage{
+    width: 6rem;
+    margin-right: 0.5rem;
+}
+
+.cardMainTitle{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.cardProjectTitle{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.cardParent p{
+    /* width: 200px; */
+    color: white;
+    text-align: center;
+}
