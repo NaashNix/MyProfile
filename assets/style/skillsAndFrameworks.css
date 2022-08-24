@@ -1,5 +1,5 @@
 #skillsSectionMainParent {
-  margin: 4% 10%;
+  margin: 3% 10%;
   background-color: #6dd588;
   border-radius: 20px;
   padding-bottom: 1.5rem;
@@ -18,12 +18,26 @@
 }
 
 #cardContainer {
-  margin: 2rem 2rem 0rem 2rem;
+  margin: 0 2rem 0rem 2rem;
   overflow-x: scroll;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 1rem;
+}
+
+#cardContainer::-webkit-scrollbar {
+    width: 12px;
+}
+
+#cardContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(35, 39, 50, 0.2); 
+    border-radius: 10px;
+}
+
+#cardContainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(35, 39, 50, 1);
 }
 
 .cardParent {
@@ -33,6 +47,7 @@
   padding: 1rem 1rem;
   margin-right: 1.5rem;
   flex-shrink: 0;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.8);
 }
 
 .cardImage {
@@ -122,6 +137,8 @@
   flex-direction: row;
   /* overflow-x: scroll; */
 }
+
+
 
 .projectItem {
   width: 200px;
