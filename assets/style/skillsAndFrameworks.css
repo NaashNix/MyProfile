@@ -270,10 +270,10 @@
 
 #contactMeSection {
   padding-top: 6rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
 }
 
 #contactMeSection > img {
@@ -303,7 +303,6 @@
   display: flex;
   flex-wrap: wrap;
   width: 456px;
-  height: 224px;
 }
 
 .social-icons-background {
@@ -351,4 +350,99 @@
 
 .social-icons-background:nth-of-type(6) {
   border-color: #115dff;
+}
+
+
+footer{
+    /* height: 200px; */
+    background-color: #2f3640;
+}
+
+#siteLinks{
+    text-align: center;
+    margin: 1.5rem 2rem;
+}
+
+#siteLinks span, address span, #contactDetails #heading{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: white;
+}
+
+#siteLinks ul{
+    margin-top: 0.6rem;
+    color: white;
+}
+
+#siteLinks a{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    color: #a4b0be;
+    text-decoration: none;
+}
+
+#siteLinks a:hover{
+    color: white;
+    transition: all 400ms;
+}
+
+
+address{
+    margin: 1.5rem 0 0 0 ;
+    text-align: center;
+}
+
+address p{
+    display: block;
+    color: #a4b0be;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 0.6rem;
+}
+
+#contactDetails{
+    text-align: center;
+    margin: 1.5rem  0 0 0;
+}
+
+#contactDetails span{
+    display: block;
+    color: #a4b0be;
+    font-family: 'Roboto',sans-serif;
+    /* margin-top: 0.6rem; */
+}
+
+#developerDetails{
+    text-align: center;
+    margin: 01.6rem 2rem;
+}
+
+#developerDetails span{
+    display: block;
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+}
+
+#developerDetails #myName:hover,
+#developerDetails #myName:focus{
+    color: #1e90ff;
+    transition: all 200ms;
+}
+
+#backToTopButton{
+    display: block;
+    margin-top: 4rem;
+    background-color: #0b66c3;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#backToTopButton:hover,
+#backToTopButton:focus{
+    background-color: #2588ea;
+    transition: all 400ms;
 }
