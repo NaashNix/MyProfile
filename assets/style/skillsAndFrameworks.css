@@ -27,17 +27,17 @@
 }
 
 #cardContainer::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 #cardContainer::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(35, 39, 50, 0.2); 
-    border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(35, 39, 50, 0.2);
+  border-radius: 10px;
 }
 
 #cardContainer::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(35, 39, 50, 1);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(35, 39, 50, 1);
 }
 
 .cardParent {
@@ -137,8 +137,6 @@
   flex-direction: row;
   /* overflow-x: scroll; */
 }
-
-
 
 .projectItem {
   width: 200px;
@@ -264,12 +262,93 @@
 }
 
 #startAProjectSection a:hover,
-#startAProjectSection a:focus{
-    background-color: #1abc9c;
-    color: white;
-    transition: all 400ms ease-in-out;
+#startAProjectSection a:focus {
+  background-color: #1abc9c;
+  color: white;
+  transition: all 400ms ease-in-out;
 }
 
 #contactMeSection {
-  height: 20rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#contactMeSection > img {
+  width: 33rem;
+  margin: 1rem 1rem 1rem 1rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+#socialLinksContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+#socialLinksContainer span {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0%;
+}
+
+#social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 456px;
+  height: 224px;
+}
+
+.social-icons-background {
+  margin: 22px 33px;
+  background-color: white;
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-icons-background img {
+  width: 46px;
+}
+
+.social-icons-background:nth-of-type(1) {
+  border-color: #FB073E;
+}
+
+.social-icons-background:hover,
+.social-icons-background:focus{
+    transform: rotate(360deg);
+    transition: all 800ms ease-out;
+}
+
+.social-icons-background:nth-of-type(2) {
+  border-color: #0b66c3;
+}
+
+.social-icons-background:nth-of-type(3) {
+  border-color: #01ba34;
+}
+
+.social-icons-background:nth-of-type(4) {
+  border-color: #d62f84;
+}
+
+.social-icons-background:nth-of-type(5) {
+  border-color: #e37015;
+}
+
+.social-icons-background:nth-of-type(6) {
+  border-color: #115dff;
 }
