@@ -132,6 +132,7 @@ nav button{
 nav button:hover,
 nav button:focus{
     transform: scale(1.05);
+    transition: all 300ms ease-in-out;
 }
 
 

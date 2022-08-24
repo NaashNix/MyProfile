@@ -145,19 +145,19 @@
         </section>
 
         <section id="skillsSectionMainParent">
-            <span id="mainHeading">SKILLS & FRAMEWORKS</span>
+            
             <div id="cardContainer">
-                
+
             </div>
         </section>
 
         <section id="projectsSectionMainParent">
-            <span id="mainHeading" >PROJECTS DONE BY ME</span>
-            <div id="categoryParent" >
-                <a href="" class="active">All</a>
-                <a href="">Mobile Apps</a>
-                <a href="">Web</a>
-                <a href="">Standalone</a>
+            <span id="mainHeading">PROJECTS DONE BY ME</span>
+            <div id="categoryParent">
+                <a id="typeAll" class="active" onclick="typeAllClicked()">All</a>
+                <a id="typeMobileApps" onclick="typeMobileAppsClicked()">Mobile Apps</a>
+                <a id="typeWeb" onclick="typeWebClicked()">Web</a>
+                <a id="typeStandalone" onclick="typeStandaloneClicked()">Standalone</a>
             </div>
             <div id="projectItemsContainer">
                 <div class="projectItem">
@@ -169,6 +169,13 @@
                         <img src="./assets/images/github.png" alt="">
                     </div>
                 </div>
+            </div>
+
+            <div id="projectItemControllers">
+                
+                <img src="./assets/images/next.png" class="slideButtons" id="previousButton" alt="">
+                <div id="slideCount"></div>
+                <img src="./assets/images/next.png" class="slideButtons" id="nextButton" alt="">
             </div>
 
         </section>
@@ -201,8 +208,9 @@
             };
             requestAnimationFrame(update);
         </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="./assets/js/projectSection.js"></script>
         <script src="./assets/js/skillSection.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
