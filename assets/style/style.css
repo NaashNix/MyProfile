@@ -5,14 +5,14 @@
   box-sizing: border-box;
   z-index: 1;
 }
-main{
-  position: relative; 
+main {
+  position: relative;
   overflow: hidden;
 }
 
-canvas{
-  display:block;
-  vertical-align:bottom;
+canvas {
+  display: block;
+  vertical-align: bottom;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -22,17 +22,16 @@ canvas{
   z-index: 0 !important;
 }
 
-
 /* ---- stats.js ---- */
 
-.count-particles{
+.count-particles {
   background: #000022;
   position: absolute;
   top: 48px;
   left: 0;
   width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
+  color: #13e8e9;
+  font-size: 0.8em;
   text-align: left;
   text-indent: 4px;
   line-height: 14px;
@@ -41,43 +40,41 @@ canvas{
   font-weight: bold;
 }
 
-.js-count-particles{
+.js-count-particles {
   font-size: 1.1em;
 }
 
 #stats,
-.count-particles{
+.count-particles {
   -webkit-user-select: none;
   margin-top: 5px;
   margin-left: 5px;
 }
 
-#stats{
+#stats {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
 }
 
-.count-particles{
+.count-particles {
   border-radius: 0 0 3px 3px;
 }
 
-
 /* ---- particles.js container ---- */
 
-#particles-js{
+#particles-js {
   width: 100%;
   height: 100%;
   /* background-color: #b61924; */
-  background-image: url('');
+  background-image: url("");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
-
 body {
   font-size: 10px;
-  background-color: #1B1C21 !important;
+  background-color: #1b1c21 !important;
 }
 nav {
   z-index: 100;
@@ -92,7 +89,7 @@ nav {
 label.logo {
   color: white;
   font-size: 1.5rem;
-  font-family: 'Goldman',sans-serif;
+  font-family: "Goldman", sans-serif;
   padding: 0.1rem 1rem;
   font-weight: bold;
   margin-bottom: 0;
@@ -117,9 +114,9 @@ nav ul li a {
   display: inline;
 }
 
-nav button{
+nav button {
   border-radius: 15px;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   line-height: 1;
   background: white;
   padding: 0.6rem 0.5rem 0.6rem 0.5rem;
@@ -129,19 +126,31 @@ nav button{
   margin: 0.6rem;
 }
 
-nav button:hover,
-nav button:focus{
-    transform: scale(1.05);
-    transition: all 300ms ease-in-out;
+@media only screen and (max-width: 600px) {
+  nav button {
+    font-size: 0.1rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    z-index: 5;
+  }
+  
 }
 
+nav button:hover,
+nav button:focus {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
 
-#menuItem li a:hover, #menuItem li a:focus{
+#menuItem li a:hover,
+#menuItem li a:focus {
   color: white;
 }
 
-#menuItem li a:before{
-
+#menuItem li a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -149,23 +158,23 @@ nav button:focus{
   border-radius: 10px;
   bottom: -3px;
   left: 0;
-  background-color: #47C0A0;
+  background-color: #47c0a0;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.15s ease-in-out 0s;
   transition: all 0.15s ease-in-out 0s;
-
 }
 
-#menuItem li a:hover:before , #menuItem li a.active:before {
+#menuItem li a:hover:before,
+#menuItem li a.active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-#menuItem li a.active{
-  color: #47C0A0 !important;
+#menuItem li a.active {
+  color: #47c0a0 !important;
 }
 
 .checkbtn {
@@ -196,7 +205,8 @@ nav button:focus{
 
   i {
     position: absolute;
-    top: 5px;
+    top: 10px;
+    left: 10px;
   }
 
   ul {
@@ -226,4 +236,3 @@ nav button:focus{
     left: 0;
   }
 }
-

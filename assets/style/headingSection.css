@@ -95,3 +95,37 @@
     filter: drop-shadow(0 0 0.75rem rgba(151, 71, 255, 0.50));
     transition: 600ms ease-in-out all;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #headingSectionMainParent{
+      
+    }
+
+    #headingOne{
+      font-size: 0.9rem;
+    }
+
+    #headingTwo, #headingThree, #headingFour, #headingFive{
+      font-size: 1.5rem;
+    }
+
+    #quickDescriptionAboutMe{
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+
+    .profileImageSlider{
+      position: relative;
+      align-items: center;
+      padding: 0;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    .profileImageSlider img{
+      /* display: none; */
+      width: 200px;
+    }
+}
