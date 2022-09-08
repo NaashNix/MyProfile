@@ -35,6 +35,24 @@ function skillViewComponent(skill) {
                 </div>`;
 }
 
+function createCom () {
+  const ab=  [{
+    heading : 'HEAding'
+  }];
+
+  cardContainer.append(abd(ab[0]));
+
+}
+
+
+function abd (object) {
+  return(
+    `<div>
+                <h1>${object.heading}</h1>
+            </div>`
+  )
+}
+
 const skills = [
   {
     title: "HTML5",
@@ -68,6 +86,7 @@ const skills = [
     description:
       "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
   },
+  
 ];
 
 skills.forEach((skill) => {

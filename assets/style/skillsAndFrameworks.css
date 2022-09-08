@@ -99,6 +99,7 @@
 }
 
 #projectsSectionMainParent {
+  
   background-color: #25252f;
   padding: 3rem 3rem 5rem 3rem;
   display: flex;
@@ -112,6 +113,14 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+}
+
+#projectsSectionMainParent #subHeading {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  line-height: 0.5;
+  font-size: 0.6rem;
 }
 
 #categoryParent a {
@@ -135,16 +144,23 @@
   background-color: #232732;
   display: flex;
   flex-direction: row;
-  /* overflow-x: scroll; */
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+#projectItemsContainer::-webkit-scrollbar {
+  width: 0px;
 }
 
 .projectItem {
-  width: 200px;
+  width: 300px;
   height: 200px;
   margin-right: 1rem;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
+  flex-shrink: 0;
 }
 
 .iconsParent {
@@ -153,16 +169,17 @@
 }
 
 .iconsParent img {
-  width: 150%;
+  width: 120%;
+  transform: scale(1.2);
 }
 
 .description {
-  background-color: rgba(61, 61, 61, 0.8);
+  background-color: rgba(61, 61, 61, 0.9);
   z-index: 2;
   color: white;
   position: absolute;
   top: 0;
-  width: 200px;
+  width: 300px;
   height: 200px;
   text-align: center;
   padding: 1rem;
@@ -174,15 +191,32 @@
   transition: all 300ms;
 }
 
-.description p {
+.description>span {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   text-shadow: 1px 1px 5px #000;
 }
 
+.description p{
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.description hr{
+  opacity: 0.5;
+  background-color: white;
+  height: 1px;
+  width: 50%;
+  margin: 0.1rem auto !important;
+}
+
 .description img {
-  width: 80px;
+  width: 40px;
 }
 
 .description img:hover,

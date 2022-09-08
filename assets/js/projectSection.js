@@ -8,29 +8,50 @@ const typeStandalone = $("#typeStandalone");
 var selectedType = "all";
 const projects = [
   {
-    title: "Money Converter",
-    github: "naashnix.github.com/MyProfile",
-    type: "web",
-    icon: "./assets/images/SampleProjectUI.png",
-  },
-  {
-    title: "Money Converter",
-    github: "naashnix.github.com/MyProfile",
-    type: "web",
-    icon: "./assets/images/SampleProjectUI.png",
-  },
-  {
-    title: "Money Converter",
-    github: "naashnix.github.com/MyProfile",
+    title: "Cooperative Bank Management System",
+    github: "https://github.com/NaashNix/coopBank",
     type: "standalone",
-    icon: "./assets/images/SampleProjectUI.png",
+    icon: "./assets/images/co-opbank_01.jpeg",
+    description: 'This project was done for my first semester final project. I used Java as the core language in this project.'
   },
   {
-    title: "Money Converter",
-    github: "naashnix.github.com/MyProfile",
-    type: "mobileApps",
-    icon: "./assets/images/SampleProjectUI.png",
+    title: "POS-Bootstrap",
+    github: "https://github.com/NaashNix/POS-bootstrap",
+    type: "web",
+    icon: "./assets/images/pos_bootstrap.png",
+    description: 'This Point Of Sale System developed for the assignment in Internet Technologies Module. Used bootstrap as the frontend css framework.'
   },
+  {
+    title: "Student Management System",
+    github: "https://github.com/NaashNix/orm-cw",
+    type: "standalone",
+    icon: "./assets/images/ormCW.png",
+    description: 'In here use can add student as well as courses or programs. ser can view students and their related courses. used Hibernate as ORM the tool.'
+  },
+  {
+    title: "Mini Car Game",
+    github: "https://github.com/NaashNix/mini-car-game",
+    type: "web",
+    icon: "./assets/images/miniCarGame.png",
+    description: 'This simple car game was developed using jQuery , HTML, CSS and JavaScript. As a sub assignment for the Advanced API module.'
+  },
+  {
+    title: "POS-Layered Architecture",
+    github: "https://github.com/NaashNix/POS_Layered",
+    type: "standalone",
+    icon: "./assets/images/posLayered.png",
+    description: 'This POS system developed using Java, JavaFX with standard of Layered Architecture. MySql used as the database. '
+  },
+  {
+    title: "Personal Website",
+    github: "https://github.com/NaashNix/MyProfile",
+    type: "web",
+    icon: "./assets/images/myProfileWeb.png",
+    description : 'My Personal Website developed using HTML, CSS and JavaScript with Jquery.'
+  }
+
+  // Add more projects here as the object with above attributes.
+  
 ];
 
 const typeAllClicked = () => {
@@ -70,6 +91,8 @@ const typeStandaloneClicked = () => {
   changeProjects("standalone");
 };
 
+changeProjects('all');
+
 function changeProjects(type) {
   projectItemsContainer.html("");
 
@@ -86,13 +109,35 @@ function changeProjects(type) {
   }
 }
 
+let scroll = 0;
+
+function rightScrollButtonClicked(){
+    
+    if (!(projectItemsContainer.width()<scroll)){
+      scroll += 500;
+      projectItemsContainer.scrollLeft(scroll);
+    }
+    
+}
+
+function leftScrollButtonClicked() {
+  
+  if (!(scroll < 1)) {
+    scroll -= 500;
+    projectItemsContainer.scrollLeft(scroll);
+  }
+  
+}
+
 function createItem(itemDetails) {
   return `<div class="projectItem">
             <div class="iconsParent">
                 <img src="${itemDetails.icon}" alt="">
             </div>
             <div class="description">
-                <p>${itemDetails.title}</p>
+                <span>${itemDetails.title}</span>
+                <hr>
+                <p>${itemDetails.description}</p>
                 <a href="${itemDetails.github}" ><img src="./assets/images/github.png" alt=""></a>
             </div>
             </div>`;

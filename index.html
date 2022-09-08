@@ -121,7 +121,7 @@
 
         </main>
 
-        <section id="educationSectionMainParent">
+        <section id="educationSectionMainParent" class="reveal">
             <span id="educationMainHeading">EDUCATION & SKILLS</span>
 
             <img src="./assets/images/educationTree.png" alt="">
@@ -146,7 +146,7 @@
             </div>
         </section>
 
-        <section id="skillsSectionMainParent">
+        <section id="skillsSectionMainParent" class="reveal">
 
             <div id="cardContainer">
 
@@ -155,14 +155,15 @@
 
         <section id="projectsSectionMainParent">
             <span id="mainHeading">PROJECTS DONE BY ME</span>
+            <span id="subHeading">Hover over project icon to see details</span>
             <div id="categoryParent">
                 <a id="typeAll" class="active" onclick="typeAllClicked()">All</a>
                 <a id="typeMobileApps" onclick="typeMobileAppsClicked()">Mobile Apps</a>
                 <a id="typeWeb" onclick="typeWebClicked()">Web</a>
                 <a id="typeStandalone" onclick="typeStandaloneClicked()">Standalone</a>
             </div>
-            <div id="projectItemsContainer">
-                <div class="projectItem">
+            <div id="projectItemsContainer" class="reveal">
+                <!-- <div class="projectItem">
                     <div class="iconsParent">
                         <img src="./assets/images/SampleProjectUI.png" alt="">
                     </div>
@@ -170,17 +171,17 @@
                         <p>Money Counting System</p>
                         <img src="./assets/images/github.png" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div id="projectItemControllers">
 
-                <img src="./assets/images/next.png" class="slideButtons" id="previousButton" alt="">
+                <img src="./assets/images/next.png" onclick="leftScrollButtonClicked()" class="slideButtons" id="previousButton" alt="">
                 <div id="slideCount"></div>
-                <img src="./assets/images/next.png" class="slideButtons" id="nextButton" alt="">
+                <img src="./assets/images/next.png" onclick="rightScrollButtonClicked()" class="slideButtons" id="nextButton" alt="">
 
             </div>
-            <div id="startAProjectSection">
+            <div id="startAProjectSection" class="reveal">
                 <span>Start A Project</span>
                 <span>Interested in working together? We should queue up a chat. I’ll buy the coffee.</span>
                 <a href="">Let's Go</a>
@@ -253,6 +254,7 @@
                 </a>
                 <a id="backToTopButton" href="">BACK TO TOP</a>
             </div>
+            
         </footer>
 
         <!-- particles.js container -->
@@ -277,7 +279,7 @@
                 stats.begin();
                 stats.end();
                 if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+                    // count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
                 }
                 requestAnimationFrame(update);
             };
