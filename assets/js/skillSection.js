@@ -55,15 +55,15 @@ function abd (object) {
 
 const skills = [
   {
-    title: "HTML5",
+    title: "JAVA",
     projects: 6,
-    rating: 2,
+    rating: 4,
     imageUrl: "./assets/images/HTML5 .png",
     description:
       "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
   },
   {
-    title: "HTML5",
+    title: "JavaScript",
     projects: 6,
     rating: 5,
     imageUrl: "./assets/images/HTML5 .png",
@@ -79,14 +79,93 @@ const skills = [
       "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
   },
   {
-    title: "HTML5",
+    title: "CSS3",
     projects: 6,
     rating: 5,
     imageUrl: "./assets/images/HTML5 .png",
     description:
       "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
   },
-  
+  {
+    title: "JavaFX",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "Bootstrap",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "jQuery",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "ReactJS",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "ExpressJS",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "NodeJS",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "MySql",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "MongoDB",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "Spring-Boot",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  },
+  {
+    title: "Hibernate",
+    projects: 6,
+    rating: 5,
+    imageUrl: "./assets/images/HTML5 .png",
+    description:
+      "I’ve done more than 5 projects using HTML language. This experience in HTML leads me to the easy tool for programming and web developing.   ",
+  }
 ];
 
 skills.forEach((skill) => {
