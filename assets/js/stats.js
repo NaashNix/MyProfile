@@ -41,7 +41,7 @@ var Stats = function () {
 	var msDiv = document.createElement( 'div' );
 	msDiv.id = 'ms';
 	msDiv.style.cssText = 'padding:0 0 3px 3px;text-align:left;background-color:#020;display:none';
-	container.appendChild( msDiv );
+	// container.appendChild( msDiv );
 
 	var msText = document.createElement( 'div' );
 	msText.id = 'msText';
