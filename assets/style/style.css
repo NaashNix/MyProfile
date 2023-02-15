@@ -185,9 +185,11 @@ nav button:focus {
   cursor: pointer;
   display: none;
 }
+
 #check {
   display: none;
 }
+
 @media (max-width: 1000px) {
   label.logo {
     font-size: 30px;

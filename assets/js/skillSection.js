@@ -2,11 +2,9 @@ const cardContainer = $("#cardContainer");
 
 
 function skillViewComponent(skill) {
-  console.log("Skill called");
 
   var ratingCreated = "";
 
-  console.log(typeof skill.rating);
 
   for (var i = 0; i < skill.rating; i++) {
     console.log("i"+i);
